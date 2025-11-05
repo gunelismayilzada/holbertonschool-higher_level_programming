@@ -1,4 +1,6 @@
+#!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    """Print up to x elements of a list and return the number printed."""
     count = 0
     for i in range(x):
         try:
@@ -6,5 +8,5 @@ def safe_print_list(my_list=[], x=0):
             count += 1
         except IndexError:
             break
-    print()
+    print()  # print newline at the end
     return count
